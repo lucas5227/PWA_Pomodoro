@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- jQuery (optional) -->
+    <script src="assets/js/jquery-3.7.1.slim.min.js"></script>
+</head>
+<body class="bg-dark text-light">
+    <div class="container text-center mt-5">
+        <!-- 날짜 표시 -->
+        <h5 id="date" class="mb-1"></h5>
+        <!-- 시간 표시 -->
+        <h1 id="time" class="mb-3"></h1>
+
+        <!-- 작업 및 휴식 -->
+        <h1 class="d-flex justify-content-center align-items-center mb-3">
+            <div id="work" class="px-3 py-2 bg-primary rounded">Work</div>
+            <div id="break" class="px-3 py-2 bg-success rounded">Break</div>
+        </h1>
+
+        <!-- 타이머 설정 입력 -->
+        <div class="mb-3">
+            <label for="workTimeInput" class="form-label">Work Time</label>
+            <input type="text" id="workTimeInput" class="form-control w-30 mx-auto" placeholder="45" maxlength="2">
+        </div>
+
+        <div class="mb-3">
+            <label for="breakTimeInput" class="form-label">Break Time</label>
+            <input type="text" id="breakTimeInput" class="form-control w-30 mx-auto" placeholder="15" maxlength="2">
+        </div>
+
+        <!-- 타이머 스위치 및 음소거 스위치 -->
+        <div class="form-check form-switch mb-3 w-30 mx-auto">
+            <input class="form-check-input" type="checkbox" role="switch" id="timerSwitch">
+            <label class="form-check-label" for="timerSwitch">Timer</label>
+        </div>
+        <div class="form-check form-switch mb-3 w-30 mx-auto">
+            <input class="form-check-input" type="checkbox" role="switch" id="muteSwitch">
+            <label class="form-check-label" for="muteSwitch">Mute</label>
+        </div>
+
+        <!-- 타이머 범위 입력 -->
+        <label for="volumeControl" class="form-label">Volume: <span id="volumeValue">100</span>%</label>
+        <input type="range" class="form-range mb-4 w-30 mx-auto" id="volumeControl" value="100">
+
+        <button type="button" class="btn btn-danger w-30 mx-auto" id="resetButton">Reset</button>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom Script -->
+    <script src="assets/js/Pomodoro.js"></script>
+</body>
+</html>

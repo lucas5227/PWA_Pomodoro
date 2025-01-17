@@ -1,0 +1,16 @@
+/* 윈도우 너비 200px로 제한 */
+body {
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+/* 깜빡이는 효과 */
+.blink {
+    animation: blink-animation 1s steps(1, end) infinite;
+}
+
+@keyframes blink-animation {
+    50% {
+        opacity: 70%;
+    }
+}
