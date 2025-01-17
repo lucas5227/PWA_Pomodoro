@@ -5,5 +5,12 @@
   "theme_color": "#000000",
   "background_color": "#000000",
   "short_name": "Pomodoro",
-  "description": "Pomodoro"
+  "description": "Pomodoro",
+  "icons": [
+    {
+      "src": "assets/images/icon.png",
+      "sizes": "160x160",
+      "type": "image/png"
+    }
+  ]
 }
