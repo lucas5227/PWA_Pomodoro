@@ -1,0 +1,9 @@
+{
+  "start_url": "/index.html",
+  "display": "standalone",
+  "name": "Pomodoro",
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "short_name": "Pomodoro",
+  "description": "Pomodoro"
+}
